@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+ </head>
+ <body>
+     <form>
+         <fieldset>
+            <legend>optgroup 태그</legend>
+                <select id="class">
+                    <optgroup>
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                </select>
+         </fieldset>
+
+         <fieldset>
+            <legend>datalist 태그</legend>
+                <input type="text" id="interest" list="choices">
+                <datalist id="choices">
+                    <option value="grammar" label="문법"></option>
+                    <option value="voca" label="어휘"></option>
+                    <option value="speaking" label="회화"></option>
+                    <option value="listening" label="스피킹"></option>
+                    <option value="news" label="뉴스"></option>
+                </datalist>
+        </fieldset>
+
+     </form>
+ </body>
+ </html>

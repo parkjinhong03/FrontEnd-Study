@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            float: left;
+            margin: 2px;
+        }
+        .div1 {
+            background: blue; /* background를 지원하지 않는 브라우저용 */
+            background: -webkit-linear-gradient(left top, blue, white);
+            background: -moz-linear-gradient(right bottom, blue, white);
+            background: -o-linear-gradient(right bottom, blue, white);
+            background: repeating-linear-gradient(to bottom right, blue, white); /* 표준 구문 */
+        }
+        .div2 {
+            background: blue; /* background를 지원하지 않는 브라우저용 */
+            background: -webkit-linear-gradient(right top, blue, white);
+            background: -moz-linear-gradient(bottom left, blue, white);
+            background: -o-linear-gradient(bottom left, blue, white);
+            background: repeating-linear-gradient(to bottom left, blue, white); /* 표준 구문 */
+        }
+        .div3 { /* 45도 오른쪽 위 방향으로, 파랑에서 흰색으로 */
+            background: blue; /* background를 지원하지 않는 브라우저용 */
+            background: -webkit-linear-gradient(45deg, blue, white);
+            background: -moz-linear-gradient(45deg, blue, white);
+            background: -o-linear-gradient(45deg, blue, white);
+            background: repeating-linear-gradient(45deg, blue, white); /* 표준 구문 */
+        }
+        .div4 { /* 315도 왼쪽 위 방향으로, 파랑에서 흰색으로 */
+            background: blue; /* background를 지원하지 않는 브라우저용 */
+            background: -webkit-linear-gradient(315deg, blue, white);
+            background: -moz-linear-gradient(315deg, blue, white);
+            background: -o-linear-gradient(315deg, blue, white);
+            background: repeating-linear-gradient(315deg, blue, white); /* 표준 구문 */
+        }
+        .div5 { /* 색상 중지점 (색상이 바뀌는 지점과 해당 색상도 함께 지정할 수 있다) */
+            width: 700px;
+            height: 400px;
+            margin-left: 150px;
+            background-color: #06f;
+            background: -webkit-linear-gradient(top, #06f, white 30%, #06f);
+            background: -moz-linear-gradient(bottom, #06f, white 30%, #06f);
+            background: -o-linear-gradient(bottom, #06f, white 30%, #06f);
+            background: linear-gradient(to bottom, #06f, white 30%, #06f); /* 표준 구문 */
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+</body>
+</html>
